@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{blog.title}}{% endblock %}
+
+{% block body %}
+<main>
+  <div class="p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">{{blog.title}}</h1>
+    <p class="fs-5 text-muted">{#TODO#}{{blog.content}}</p>
+    <a href="{{path('blog')}}" class="btn btn-primary">Revenir en arrière</a>
+  </div>
+</main>
+
+{% endblock %}

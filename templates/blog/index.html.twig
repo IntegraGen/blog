@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon blog{% endblock %}
+
+{% block body %}
+<header>
+  <div class="p-3 pb-md-4 mx-auto text-center">
+    <h1 class="display-4 fw-normal">Mon blog</h1>
+    <p class="fs-5 text-muted">Vous trouverez par la suite la liste des blogs créer sur le site</p>
+  </div>
+</header>
+<main>
+  <div class="container px-4 py-5">
+    <h2 class="pb-2 border-bottom">
+      Listes
+      <a href="{#TODO#}" class="btn btn-primary float-end">Créer un nouveau blog</a>
+    </h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+      {% for blog in blogs %}
+        <div class="col d-flex align-items-start">
+          <div>
+            <h3 class="h4 fw-bold mb-0">{{blog.title}}</h3>
+            <p class="text-muted">Date : {#TODO#} - Ecrit par {{blog.author}}</p>
+            <a href="{#TODO#}" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      {% endfor %}       
+    </div>
+  </div>
+</main>
+
+{% endblock %}
