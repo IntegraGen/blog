@@ -34,6 +34,10 @@ L'interface actuel utilise bootstrap 5
 
 2) 
 
+### Compétence en Javascript
+1) Les blogs déjà présents sont trié par ordre croissant d'id de la base de données. Nous aimerions un tri par date croissant ou décroissant sur le clic du bouton "Trier par date : Croissant" et ceux sans recharger la page.
+
+2) 
 ### Manipulation d'entité
 1) Le schéma actuel nous propose un champs author en string, donnée redondante quand un auteur écrit plusieurs articles. Changez le système d'entité pour éviter cette redondance.
 
@@ -45,7 +49,7 @@ L'interface actuel utilise bootstrap 5
 ### Système poussé ( bonus )
 1) La création et la suppression d'un article ne devrait pas être donnée a tout le monde, il faut donc mettre en place un système de sécurité.
 
-2) API
+2) On aimerait pouvoir utiliser les blogs existants dans divers applications, pour cela, il faudrait un accès API en GET pour récupérer les blogs et avoir un retour en JSON.
 
 ## Annexes
 * Schéma de la base de données dans le dossier sql/schema.png

@@ -2,6 +2,15 @@
 
 {% block title %}Mon blog{% endblock %}
 
+{% block stylesheets %}
+  {{parent()}}
+{% endblock %}
+
+{% block javascripts %}
+  {{parent()}}
+  {#TODO#}
+{% endblock %}
+
 {% block body %}
 <header>
   <div class="p-3 pb-md-4 mx-auto text-center">
@@ -13,6 +22,7 @@
   <div class="container px-4 py-5">
     <h2 class="pb-2 border-bottom">
       Listes
+      <button type="button" class="btn btn-secondary ms-1 float-end">Tri par date : <span>Croissant</span></button>
       <a href="{#TODO#}" class="btn btn-primary float-end">Créer un nouveau blog</a>
     </h2>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
